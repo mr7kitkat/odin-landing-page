@@ -1,3 +1,4 @@
+/* Make some default setup to style */
 :root{
     --dark-color: #1F2937;
     --white-color: #F9FAF8;
@@ -32,6 +33,8 @@ a {
     text-decoration: none;
 }
 
+/* Define some repeating style with calss */
+
 .body-width {
     max-width: 1000px;
     width: 100%;
@@ -65,20 +68,43 @@ a {
     justify-content: space-between;
 }
 
-.header-sec-one span{
-    padding: 1rem 0;
-    font-size: 1.125rem;
-    font-weight: bold;
+.sec-height {
+    max-height: 600px;
+    min-height: 450px;
+    height: 100%;
+    padding: 1rem;
 }
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.button {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 16px 0;
+    display: inline-block;
+}
+
+.line-height {
+    line-height: 1.5;
+}
+
+
+/* Styling for Header section */
 
 nav a {
     padding: 1rem;
 }
 
-.sec-height {
-    max-height: 600px;
-    min-height: 300px;
-    height: 100%;
+.header-sec-one span{
+    padding: 1rem;
+    font-size: 1.125rem;
+    font-weight: bold;
 }
 
 .header-sec-two h1 {
@@ -92,30 +118,44 @@ nav a {
 .hero-img {
     height: 250px;
     width: 450px;
+
+    background-color: var(--lgray-color);
+    color: var(--white-color);
 }
+
+/* Styling for main aresa */
 
 .info-img{
     height: 150px;
     width: 150px;
 }
 
-.wrap {
-    flex-wrap: wrap;
-}
 
 figure {
     margin: 1rem;
+    justify-content: space-between;
 }
 
-.button {
-    background-color: var(--blue-color);
-    color: var(--white-color);
-    padding: 8px 16px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 6px;
-    margin: 16px 0;
-    display: inline-block;
+figure img {
+    background-color: var(--dark-color);
+    color: white;
+    border: 3px solid var(--blue-color);
+    border-radius: 1rem;
+    object-fit: cover;
+    outline: none;
+}
+
+figcaption {
+    width: 125px;
+    text-align: center;
+    font-size: 0.8rem;
+
+    margin-block-start: 0.5rem;
+}
+
+
+.main-sec-one {
+    justify-content: space-evenly;
 }
 
 .main-sec-three > section{
@@ -130,8 +170,24 @@ figure {
     border: 1px solid var(--white-color);
 }
 
+q {
+    font-size: 1.7rem;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2;
+}
 
+.quote-sec {
+    max-width: 650px;
+}
 
+.quote-sec p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/* Styling for footer area */
 footer {
     padding: 1rem;
 }
