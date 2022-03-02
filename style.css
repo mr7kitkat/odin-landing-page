@@ -31,6 +31,12 @@ footer {
 
 a {
     text-decoration: none;
+    opacity: 0.5;
+}
+
+a:hover {
+    transition: 0.25s linear;
+    opacity: 1;
 }
 
 /* Define some repeating style with calss */
@@ -112,12 +118,12 @@ nav a {
 }
 
 .hero-sec {
-    max-width: 450px;
+    width: 35%;
 }
 
 .hero-img {
     height: 250px;
-    width: 450px;
+    width: 60%;
 
     background-color: var(--lgray-color);
     color: var(--white-color);
@@ -190,4 +196,28 @@ q {
 /* Styling for footer area */
 footer {
     padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    .header-sec-one,
+    .header-sec-two,
+    .main-sec-three > section {
+        flex-flow: column nowrap;
+    }
+
+    .header-sec-two {
+        margin-top: 1rem;
+    }
+
+    .hero-sec,
+    .hero-img {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+
 }
